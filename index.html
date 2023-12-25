@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url('pay.jpeg');
+            background-image: url('bank.jpg');
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -64,15 +65,18 @@
         button:hover {
             background-color: #0056b3;
         }
-    .snow{
-        color: rgb(60, 255, 0);
-    }
-    .okay{
-        color: rgb(98, 0, 255);
-        font-style: italic;
-    }
+        
+        .snow {
+            color: rgb(60, 255, 0);
+        }
+        
+        .okay {
+            color: rgb(98, 0, 255);
+            font-style: italic;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1 class="snow">WELCOME TO PLUXLOGS COMPANY</h1>
@@ -88,11 +92,11 @@
     <script>
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault();
-        
+
             const email = document.getElementById('email').value;
 
-        
-            if ( !email ) {
+
+            if (!email) {
                 alert('Please fill in all details before logging in.');
             } else {
                 // You can redirect the user to another page after successful login.
@@ -101,4 +105,5 @@
         });
     </script>
 </body>
+
 </html>

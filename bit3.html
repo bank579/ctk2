@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             margin: 0;
             padding: 0;
         }
+        
         .container {
             max-width: 600px;
             margin: 0 auto;
@@ -19,13 +21,16 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+        
         h1 {
             text-align: center;
             color: #005e87;
         }
+        
         p {
             text-align: center;
         }
+        
         .wallet-address {
             text-align: center;
             background-color: #f0f0f0;
@@ -34,6 +39,7 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        
         #copyButton {
             background-color: #4CAF50;
             color: white;
@@ -47,9 +53,11 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        
         #copyButton:hover {
             background-color: #45a049;
         }
+        
         #uploadButton {
             background-color: #008CBA;
             color: white;
@@ -63,9 +71,11 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        
         #uploadButton:hover {
             background-color: #005e87;
         }
+        
         #doneButton {
             background-color: #4CAF50;
             color: white;
@@ -79,10 +89,12 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        
         #doneButton:hover {
             background-color: #45a049;
         }
-        #purchase-button{
+        
+        #purchase-button {
             padding-left: 20px;
             padding-right: 20px;
             padding-bottom: 10px;
@@ -96,19 +108,41 @@
             width: 200px;
             height: 60px;
         }
+        
         h3 {
             font-style: italic;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>BITCOIN PAYMENT</h1>
-        <h3>DEAR CUSTOMER, <br> TAKE NOTE THAT THE LOG DETAILS WOULD BE SENT TO YOUR EMAIL IMMEDIATELY 
-        AFTER PAYMENT. MAKE SURE YOU MAKE THE EXACT PRICE PAYMENT OF THE LOG TO WALLET ADDRESS.</h3>
+        <h1>PAYMENT INSTRUCTIONS</h1>
+        <p>
+            To complete your purchase securely, please follow these simple payment instructions.
+        </p>
+        <p>
+            Initiate a BTC transfer to the following address: <span className="lg:text-xl text-blue-800 font-bold text-[12px]">bc1qtwq6sdyg6rl7ufm4lvhmf0ntjp6dvs844qwpd4</span> <br></br> Once you complete the transfer, you would have to provide a payment
+            screenshot.
+        </p>
+        <p>
+            Uploading a payment screenshot? We accept image files in JPEG, PNG, and GIF formats. Ensure your proof of payment is clear and legible to expedite the verification process.
+        </p>
+        <p>
+            BTC transactions typically take a short time to confirm. You can expect to receive a confirmation within the next hour. Once confirmed, you will gain access to your purchased log details.
+        </p>
+        <p>
+            Your security is our top priority. Rest assured that all transactions are encrypted using industry-standard protocols. We employ secure channels to protect your payment information. If you have any security-related concerns, feel free to reach out to
+            our dedicated support team.
+        </p>
+        <p>
+            Need assistance? Our customer support team is here to help! For quick and efficient support, contact us via <a href='mailto:yondexx5@gmail.com' className='text-blue-800 hover:underline'>pluxlogs456@gmail.com</a>.
+        </p>
+
+        <h3>DEAR CUSTOMER, <br> TAKE NOTE THAT THE LOG DETAILS WOULD BE SENT TO YOUR EMAIL IMMEDIATELY AFTER PAYMENT. MAKE SURE YOU MAKE THE EXACT PRICE PAYMENT OF THE LOG TO WALLET ADDRESS.</h3>
         <div class="wallet-address">
             <p>Wallet Address:</p>
-            <p id="walletAddress">bc1qctkyc7cxfsdhtj6yjqp8nvwjvu2kj48v5rem6f</p>
+            <p id="walletAddress">3EoLy9Cd1RCLeoVeFKB1cDWbXesqEfWMwy</p>
             <button id="copyButton" onclick="copyWalletAddress()">Copy Address</button>
         </div>
         <form id="paymentForm">
@@ -120,7 +154,7 @@
         <button id="doneButton" style="display: none;">Done</button>
     </div>
     <div id="output"></div>
-      <button class="purchase-button" id="purchase-button">DONE TO RECEIVE LOG DETAILS</button>
+    <button class="purchase-button" id="purchase-button">DONE TO RECEIVE LOG DETAILS</button>
     </div>
 
     <script>
@@ -153,4 +187,5 @@
         });
     </script>
 </body>
+
 </html>
